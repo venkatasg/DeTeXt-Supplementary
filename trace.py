@@ -2,6 +2,7 @@ from torchvision.models import mobilenet_v2
 import torch
 import coremltools as ct
 from torchvision import transforms
+from coremltools.models.neural_network import quantization_utils
 
 with open('class_names.txt') as f:
     class_labels = f.read().splitlines()
@@ -49,3 +50,9 @@ ctmodel.version = "0.95"
 
 # Save model
 ctmodel.save("deTeX.mlmodel")
+
+# Quantisation to FP16 model that reduces size by half without (supposedly)
+# affecting accuracy
+
+ctmodel_fp16 = quantization_utils.quantize_weights(ctmodel, nbits=16)
+ctmodel_fp16.save("deTeXq.mlmodel")
