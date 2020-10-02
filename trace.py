@@ -55,4 +55,7 @@ ctmodel.save("deTeX.mlmodel")
 # affecting accuracy
 
 ctmodel_fp16 = quantization_utils.quantize_weights(ctmodel, nbits=16)
-ctmodel_fp16.save("deTeXq.mlmodel")
+ctmodel_fp16.save("deTeX16.mlmodel")
+
+ctmodel_fp8 = quantization_utils.quantize_weights(ctmodel, nbits=8)
+ctmodel_fp8.save("deTeX8.mlmodel")
