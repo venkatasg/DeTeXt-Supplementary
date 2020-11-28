@@ -21,15 +21,6 @@ TRANSFORMS = transforms.Compose([transforms.ToTensor(),
                                  transforms.Normalize(mean=[0.5, 0.5, 0.5],
                                  std=[0.5, 0.5, 0.5])])
 
-class mnetv2(nn.Module):
-    def __init__(self, num_classes):
-        super(mnetv2, self).__init__()
-        self.mobilenet = models.mobilenet_v2(pretrained=False, progress=False,
-                                             num_classes=num_classes)
-    def forward(self, x):
-        output = x
-        return output
-
 if __name__ == '__main__':
 
     ## Set random seeds for reproducibility on a specific machine
