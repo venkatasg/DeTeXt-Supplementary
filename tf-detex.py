@@ -6,7 +6,7 @@ from tensorflow.python.framework.ops import disable_eager_execution
 disable_eager_execution()
 
 from tensorflow.python.compiler.mlcompute import mlcompute
-mlcompute.set_mlc_device(device_name='any')
+mlcompute.set_mlc_device(device_name='gpu')
 
 EPOCHS = 5
 BATCH_SIZE = 64
@@ -53,14 +53,14 @@ if __name__ == '__main__':
 	
 	model = tf.keras.applications.MobileNetV3Small(
     	input_shape=(256,256,3), alpha=1.0, minimalistic=False, include_top=True,
-    	weights=None, input_tensor=None, classes=1000, pooling=None,
+    	weights=None, input_tensor=None, classes=num_classes, pooling=None,
     	dropout_rate=0, classifier_activation='softmax')
 	
 	# Compile model
 	model.compile(optimizer='adam',
               loss=tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True),
               metrics=['accuracy'])
-	model.summary()	
+# 	model.summary()	
               
     # Training
 	history = model.fit(train_ds, validation_data=val_ds, epochs=EPOCHS)
