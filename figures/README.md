@@ -36,8 +36,10 @@ use case (like changing the paths).
 
 I'm sorry the documentation for this process isn't more exhaustive or complete -- 
 my goal was to get it done, not to get it done in a organized, clean, reproducible 
-way. If you have any questions, feel free to [email me][email]
+manner. If you have any questions, feel free to [email me](mailto:gvenkata1994@gmail.com)
 
 
 <!-- Links -->
 [apple-sf]: https://developer.apple.com/documentation/xcode/creating_custom_symbol_images_for_your_app
+[sketch]: https://www.sketch.com
+[km]: https://www.keyboardmaestro.com/main/
