@@ -13,3 +13,12 @@
 /figures/tech.svg
 /figures/tech.tex
 .DS_Store
+
+figures/.ipynb_checkpoints/benchmark-checkpoint.ipynb
+
+figures/.ipynb_checkpoints/DeTeXt Train-checkpoint.ipynb
+figures/.ipynb_checkpoints/drawing-checkpoint.ipynb
+
+figures/benchmark.ipynb
+figures/DeTeXt Train.ipynb
+figures/drawing.ipynb
