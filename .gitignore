@@ -22,3 +22,11 @@ figures/.ipynb_checkpoints/drawing-checkpoint.ipynb
 figures/benchmark.ipynb
 figures/DeTeXt Train.ipynb
 figures/drawing.ipynb
+
+saved_model/keras_metadata.pb
+
+saved_model/saved_model.pb
+
+saved_model/variables/variables.data-00000-of-00001
+
+saved_model/variables/variables.index
