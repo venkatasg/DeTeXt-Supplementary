@@ -13,7 +13,7 @@ mnet = mobilenet_v2(pretrained=False, progress=False,
 mnet.load_state_dict(torch.load('mobilenet.bin',
                       map_location=torch.device('cpu')))
 
-# Add a softmax on top - why the fuck didn't I think of this
+# Add a softmax on top
 model = torch.nn.Sequential(mnet, torch.nn.Softmax(dim=1))
 model.eval()
 
