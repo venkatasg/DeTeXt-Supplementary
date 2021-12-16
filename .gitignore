@@ -30,3 +30,6 @@ saved_model/saved_model.pb
 saved_model/variables/variables.data-00000-of-00001
 
 saved_model/variables/variables.index
+
+figures/fig.png
+figures/fignew.png
