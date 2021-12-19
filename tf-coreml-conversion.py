@@ -37,4 +37,4 @@ if __name__=="__main__":
     ctmodel.version = "1.0"
 
     # Save model
-    ctmodel.save("deTeXtf3.mlmodel")
+    ctmodel.save("deTeX_tf.mlmodel")
